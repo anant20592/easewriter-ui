@@ -1,0 +1,45 @@
+{
+    "name": "easewriter-ui",
+    "version": "1.0.0",
+    "description": "EaseWriter.An easy way to manage your work.",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node ./serve.js",
+        "build": "node ./build.js",
+        "eslint": "npx eslint ./components/ ./stories/ --fix",
+        "test": "jest",
+        "format": "npx prettier . --write"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.27.0"
+    },
+    "devDependencies": {
+        "@testing-library/dom": "^10.4.0",
+        "@testing-library/react": "^16.0.1",
+        "@types/jest": "^29.5.13",
+        "@types/react": "^18.3.9",
+        "@types/react-dom": "^18.3.0",
+        "@typescript-eslint/eslint-plugin": "^7.2.0",
+        "@typescript-eslint/parser": "^7.2.0",
+        "esbuild": "^0.24.0",
+        "esbuild-plugin-tsc": "^0.4.0",
+        "eslint": "^8.57.1",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-airbnb-typescript": "^18.0.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.30.0",
+        "eslint-plugin-react": "^7.36.1",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "jest": "^29.7.0",
+        "jest-environment-jsdom": "^29.7.0",
+        "prettier": "^3.3.3",
+        "tailwindcss": "^3.4.13",
+        "ts-jest": "^29.2.5",
+        "typescript": "^5.4.5"
+    }
+}

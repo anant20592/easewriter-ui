@@ -1,0 +1,45 @@
+{
+    "extends": [
+        "airbnb-typescript/base",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "prettier",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/recommended"
+    ],
+    "plugins": ["@typescript-eslint", "import"],
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"],
+        "import/extensions": [
+            "off",
+            {
+                "ignorePackages": true
+            }
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect" //to automatically detect react version
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    // "parser": "@typescript-eslint/parser", its already a part of typescript-eslint plugin
+    "parserOptions": {
+        "requireConfigFile": false,
+        "ecmaVersion": "2017",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": "./tsconfig.json"
+    }
+}
